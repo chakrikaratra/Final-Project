@@ -2,71 +2,65 @@
 <html>
 <head>
 <style>
+body{background-color: #4A63A8;}
 .dropbtn {
-    background-color: #4CAF50;
-    color: blue;
+    background-color: #F2A1D1;
+    color: white;
     padding: 20px;
     font-size: 16px;
-    border: none;
+    border: black;
     cursor: pointer;
 }
-
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #3e8e41;
+.dropbtn sf:hover, .dropbtn:focus {
+    background-color: #E78D8D;
+    
 }
-
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #A20000;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-
 .dropdown-content a {
-    color: black;
+    color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
-
-.dropdown a:hover {background-color: #f1f1f1}
-
+.dropdown a:hover {background-color: black}
 .show {display:block;}
 </style>
 </head>
 <body>
 
-<center><h2>Select a city to see which shelters are near you!</h2>
+<center><h2>Select a city to see which shelters are near you!</h2><hr>
 <p>Click on your region/city</p></center>
 
 <div class="San Francisco">
 <button onclick="myFunction()" class="dropbtn">San Francisco</button>
   <div id="myDropdown" class="dropdown-content">
     <a href="#home">Oakland animal services</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+    <a href="#about">East Bay SPCA</a>
+    <a href="#contact">SF Animal Care & Control</a>
+    <a href="#about">Wonder Dog Rescue</a>
+    <a href="#about">SF SPCA</a>
+    <a href="#about">Peninsula Humane Society</a>
+    <a href="#about">Family Dog Rescue</a>
   </div>
 </div>
 
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
-
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
-
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
