@@ -5,10 +5,10 @@
 <style> /* anything put in the style is applied to everything on the page*/
 body {background-color: #DAE9F6;}
 p    {color: white;}
-h1 {
+header {
     color: #FBB0AE;
     font-family: century gothic;
-    font-size: 350%;
+    font-size: 175%;
     border: 10px double white
     
     
@@ -45,7 +45,10 @@ article {
     padding: 1em;
     overflow: hidden;
 }
-
+</style>
+</head>
+<body>
+<style>
 h3	{
 	color: teal;
 	font-family: century gothic;
@@ -59,6 +62,10 @@ header, footer {
     background-color: #ccffe5;
     clear: left;
     text-align: center;
+}
+
+.title {
+background-color: #DAE9F6;
 }
 nav {
     float: left;
@@ -75,16 +82,8 @@ nav ul {
 nav ul a {
     text-decoration: none;
 }    
-	
-.rotate270 {
-    -webkit-transform: rotate(270deg);
-    -moz-transform: rotate(270deg);
-    -o-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    transform: rotate(270deg);
-}
 </style>
-
+</body>
 
 <h1>
   <head>
@@ -99,12 +98,11 @@ nav ul a {
   </head>
   
   <body>
-    <h1 class="rfExample renderedFont">HOPPY HELPERS</h1>
+    <header class= "title">HOPPY HELPERS</header>
   
     <!-- Include JQuery from the Google CDN --> 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <script type="text/javascript"  src='http://cdn.renderedfont.com/js/renderedfont-0.8.min.js#free'></script>
-
 </body>
 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -119,8 +117,19 @@ nav ul a {
 
 <h2><i>Designed excusively for the Bay Area </i></h2>
 
- <img src="AnimaloftheDay.jpg" alt="yoda" style="width:1920px;height:1080px;" >
+<header>
+   <h3><center> Animal of the Day</center></h3>
+</header>
+ 
+<nav>
+  <img src="IMG_4334.JPG">
+</nav>
 
+<article>
+<h4>Meet Yoda!</h4>
+<p>This cute rabbit just turned 3 years old! He loves to run around in the backyard and his favorite toy is his toilet rolls. </p>
+<p>He's looking for a forever home with a calm family that will let him outside as much as possible.</p>
+</article>
   
 <style>
 .button {
@@ -169,12 +178,46 @@ nav ul a {
 <button class="button" style="vertical-align:middle">
 <span>Adopt</span>
 </button>
-
 </article>
 
-<h5>
-What Do We Do?
+<h5><font size="45">Who Are We?</font>
 </h5>
+<p> We are four girls from the Bay Area who met at Girls Who Code. As our final project in the internship, we decided to create a website in which people from the Bay Area can adopt, foster, and help animals. This is an ongoing project, and hopefully we can expand our website to more people in the future. 
+</p>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-row-padding">
+
+<div class="w3-quarter">
+  <h2>Sude Yazgan</h2>
+  <p>Sude is a 17 year old girl going into her senior year in Cupertino High School. She loves to paint and draw in her free time. Although she is unsure about what she wants to persue in the future, she's looking for a job where she can use her passion for art.</p>
+</div>
+
+<div class="w3-quarter">
+  <h2>Betty Zhong</h2>
+  <p>Betty is an upcoming junior at Westmont High School in San Jose. She is a huge animal-enthusiast and an aspiring vet.</p>
+</div>
+
+<div class="w3-quarter">
+  <h2>Chakrika Ratra</h2>
+  <p>Chakrika is an upcoming senior at John F. Kennedy High School. She finds enjoyment in learning how to (and actually developing) web and iOS mobile applications. She loves to self-learn and is excited about building cool products. Her favorite leisure activites include playing with her dog, hanging out with friends, and trying new things.</p>
+</div>
+
+<div class="w3-quarter">
+  <h2>Lauren Kiachian</h2>
+  <p>Lauren is a 16 year old who enjoys singing, volunteering, and eating mint chip ice cream.</p>
+</div>
+
+<style>
+.w3-quarter{
+text-align: left;
+}
+</style>
+
+
 </body>
 
 
