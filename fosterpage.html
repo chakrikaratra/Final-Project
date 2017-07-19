@@ -34,34 +34,34 @@ function w3_close() {
 <head>
 <style>
 body {
-	background-color: #A9C4DB;
+	background-color: #A9C4DB;		/*background of whole page*/
 }
 
 h1	{
-	border: 10px double #5983a6;
+	border: 10px double #5983a6;		/*border of header*/
 	color: white;
 	font-family: century gothic;
 }
 
 h2	{
-	color:white;
+	color:white;				/*CSS of animal names*/
 	font-family: century gothic;
 }
 
-.container {
+.container {					/*size of entire image and overlay*/
 	position: relative;
 	width: 50%;
 }
 
-.image {
+.image {					/*size of image*/
 	display: block;
 	width: 300px;
 	height: 300px;
 }
 
-.overlay {
-	position: absolute;
-	bottom: 100%;
+.overlay {					/*position and size of overlay*/
+	position: absolute;			
+	bottom: 100%;				/*where the overlay starts (50% is from middle, 100% from top)*/
 	left: 0;
 	right: 0;
 	background-color: #37556E;
@@ -71,12 +71,12 @@ h2	{
 	transition: .5s ease;
 }
 
-.container:hover .overlay {
+.container:hover .overlay {			/*where the overlay drops down*/
 	bottom: 0;
 	height: 100%;
 }
 
-.text {
+.text {						/*CSS of text in the overlay*/
 	white-space: wrap; 
 	color: white;
 	font-size: 20px;
