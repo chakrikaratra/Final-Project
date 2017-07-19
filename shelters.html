@@ -1,41 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>W3.CSS</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body>
-
-<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
-  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-  <a href="https://chakrikaratra.github.io/Final-Project/FinalProject.html" class="w3-bar-item w3-button">Home</a>
-  <a href="https://chakrikaratra.github.io/Final-Project/fosterpage.html" class="w3-bar-item w3-button">Foster</a>
-  <a href="https://chakrikaratra.github.io/Final-Project/adoptpage.html" class="w3-bar-item w3-button">Adopt</a>
-  <a href="https://chakrikaratra.github.io/Final-Project/helppage.html" class="w3-bar-item w3-button">Help</a>
-</div>
-
-  <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">☰</button>
-  <div class="w3-container">
-
-
-<script>
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-}
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-}
-</script>
-
-</header>
-
-
-
-
 <style>
-
-
-
+body {background-color:#F7E4FC}
 /*drop button appearance*/
 .dropbtn {
     background-color: #F2A1A9;
@@ -95,7 +62,6 @@ function w3_close() {
     <a href="#contact">SF Animal Care & Control</a>
     <a href="#about">Wonder Dog Rescue</a>
     <a href="#about">SF SPCA</a>
-    <a href="#about">Peninsula Humane Society</a>
     <a href="#about">Family Dog Rescue</a>
   </div>
 </div>
@@ -105,19 +71,52 @@ function w3_close() {
   <div id="myDropdown1" class="dropdown-content">
     <a href="#home">Oakland animal services</a>
     <a href="#about">East Bay SPCA</a>
+    <a href="#about">Hopalong Animal Rescue</a>
   </div>
 </div>
 
 <div class="dropdown">
-<button onclick="myFunction2()" class="dropbtn">San Francisco</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#contact">SF Animal Care & Control</a>
-    <a href="#about">Wonder Dog Rescue</a>
-    <a href="#about">SF SPCA</a>
+<button onclick="myFunction2()" class="dropbtn" style="background-color: #A9F290">San Mateo</button>
+  <div id="myDropdown2" class="dropdown-content">
     <a href="#about">Peninsula Humane Society</a>
-    <a href="#about">Family Dog Rescue</a>
   </div>
 </div>
+
+<div class="dropdown">
+<button onclick="myFunction3()" class="dropbtn" style="background-color: #FFD762">Santa Clara</button>
+  <div id="myDropdown3" class="dropdown-content">
+    <a href="#about">SVACA</a>
+    <a href="#about">Silicon Valley Humane Society</a>
+    <a href="#about">San Jose Animals</a>
+    <a href="#about">Santa Clara County Shelter</a>
+    <a href="#about">Wildlife Center of Silicon Valley</a>
+    <a href="#about">Safe Haven Animal Sanctuary</a>
+    <a href="#about">Pets In Need</a>
+  </div>
+</div>
+
+<div class="dropdown">
+<button onclick="myFunction4()" class="dropbtn" style="background-color: #84389B">Alameda</button>
+  <div id="myDropdown4" class="dropdown-content">
+    <a href="#about">Alameda Animal Shelter</a>
+    <a href="#about">Fremont Animal Shelter</a>
+    <a href="#about">Hayward Animal Shelter</a>
+    <a href="#about">Valley Humane Society </a>
+  </div>
+</div>
+
+
+
+<div class="dropdown">
+<button onclick="myFunction5()" class="dropbtn" style="background-color: #75EA93">Napa</button>
+  <div id="myDropdown5" class="dropdown-content">
+    <a href="#about">Napa County Animal Shelter</a>
+    
+  </div>
+</div>
+
+
+
 <script>
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
@@ -158,9 +157,83 @@ window.onclick = function(event) {
     }
   }
 }
+
+function myFunction2() {
+    document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+function myFunction3() {
+    document.getElementById("myDropdown3").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+function myFunction4() {
+    document.getElementById("myDropdown4").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+function myFunction5() {
+    document.getElementById("myDropdown5").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 </script>
-
-
 
 </body>
 </html>
