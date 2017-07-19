@@ -2,52 +2,63 @@
 <html>
 <head>
 <style>
-body{background-color: #4A63A8;}
+
+/*drop button appearance*/
 .dropbtn {
-    background-color: #F2A1D1;
+    background-color: #F2A1A9;
     color: white;
-    padding: 20px;
+    padding: 16px;
     font-size: 16px;
-    border: black;
+    border: none;
     cursor: pointer;
 }
-.dropbtn sf:hover, .dropbtn:focus {
-    background-color: #E78D8D;
-    
+
+/*when you hover over btn*/
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #F2C2A1;
 }
+
+/*appearance of dropdown*/
 .dropdown {
     position: relative;
     display: inline-block;
 }
+
+/* display of individual boxes in the dropdown menu*/
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #A20000;
+    background-color: #f9f9f9;
     min-width: 160px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
+
+/* appearance of content in each box*/
 .dropdown-content a {
-    color: white;
+    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
-.dropdown a:hover {background-color: black}
+
+/* background color of each box with hovered*/
+.dropdown a:hover {background-color: #F2C2A1}
+
+/* what happens when you 'show'*/
 .show {display:block;}
 </style>
 </head>
 <body>
-
-<center><h2>Select a city to see which shelters are near you!</h2><hr>
+<!-- heading/ words on page -->
+<center><h2>Select a city to see which shelters are near you!</h2>
 <p>Click on your region/city</p></center>
 
-<div class="San Francisco">
+<!-- what happens when you click the btn-->
+<div class="dropdown">
 <button onclick="myFunction()" class="dropbtn">San Francisco</button>
   <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Oakland animal services</a>
-    <a href="#about">East Bay SPCA</a>
     <a href="#contact">SF Animal Care & Control</a>
     <a href="#about">Wonder Dog Rescue</a>
     <a href="#about">SF SPCA</a>
@@ -56,11 +67,54 @@ body{background-color: #4A63A8;}
   </div>
 </div>
 
+<div class="dropdown">
+<button onclick="myFunction1()" class="dropbtn" style = "background-color:#9097F2" >Oakland</button>
+  <div id="myDropdown1" class="dropdown-content">
+    <a href="#home">Oakland animal services</a>
+    <a href="#about">East Bay SPCA</a>
+  </div>
+</div>
+
+<div class="dropdown">
+<button onclick="myFunction2()" class="dropbtn">San Francisco</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#contact">SF Animal Care & Control</a>
+    <a href="#about">Wonder Dog Rescue</a>
+    <a href="#about">SF SPCA</a>
+    <a href="#about">Peninsula Humane Society</a>
+    <a href="#about">Family Dog Rescue</a>
+  </div>
+</div>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
+
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+function myFunction1() {
+    document.getElementById("myDropdown1").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
