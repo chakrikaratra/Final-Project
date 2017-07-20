@@ -1,39 +1,13 @@
 <!DOCTYPE html>
 <html>
+<head>
 
-<h2 style="font-size: 40px;">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body>
-
-<div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
-  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-  <a href="https://chakrikaratra.github.io/Final-Project/FinalProject.html" class="w3-bar-item w3-button">Home</a>
-  <a href="https://chakrikaratra.github.io/Final-Project/fosterpage.html" class="w3-bar-item w3-button">Foster</a>
-    <a href="https://chakrikaratra.github.io/Final-Project/adoptpage.html" class="w3-bar-item w3-button">Adopt</a>
-  <a href="https://chakrikaratra.github.io/Final-Project/helppage.html" class="w3-bar-item w3-button">Help</a>
-</div>
-
-  <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">☰</button>
-  <div class="w3-container">
-
-
-<script>
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-}
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-}
-</script><center>Adopt Your Life-Long Friend Today! </center>
-</h2>
-
-
-
-
-
-<head>
 <style>
+h2 {
+	font-size: 40px;
+}
 body {background-color:#F7E4FC}
 /*drop button appearance*/
 .dropbtn {
@@ -44,13 +18,11 @@ body {background-color:#F7E4FC}
     border: none;
     cursor: pointer;
 }
-
 /*appearance of dropdown*/
 .dropdown {
     position: relative;
     display: inline-block;
 }
-
 /* display of individual boxes in the dropdown menu*/
 .dropdown-content {
     display: none;
@@ -61,7 +33,6 @@ body {background-color:#F7E4FC}
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-
 /* appearance of content in each box*/
 .dropdown-content a {
     color: black;
@@ -69,16 +40,139 @@ body {background-color:#F7E4FC}
     text-decoration: none;
     display: block;
 }
-
 /* background color of each box with hovered*/
 .dropdown a:hover {background-color: #F2C2A1}
-
 /* what happens when you 'show'*/
 .show {display:block;}
 </style>
+
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+function myFunction1() {
+    document.getElementById("myDropdown1").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+function myFunction2() {
+    document.getElementById("myDropdown2").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+function myFunction3() {
+    document.getElementById("myDropdown3").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+function myFunction4() {
+    document.getElementById("myDropdown4").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+function myFunction5() {
+    document.getElementById("myDropdown5").classList.toggle("show");
+}
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+</script>
 </head>
-<center>
 <body>
+
+<div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="https://chakrikaratra.github.io/Final-Project/FinalProject.html" class="w3-bar-item w3-button">Home</a>
+  <a href="https://chakrikaratra.github.io/Final-Project/fosterpage.html" class="w3-bar-item w3-button">Foster</a>
+    <a href="https://chakrikaratra.github.io/Final-Project/adoptpage.html" class="w3-bar-item w3-button">Adopt</a>
+  <a href="https://chakrikaratra.github.io/Final-Project/helppage.html" class="w3-bar-item w3-button">Help</a>
+</div>
+  <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">☰</button>
+  <div class="w3-container">
+
+<h2><center>Adopt Your Life-Long Friend Today! </center>
+</h2>
+
+
+<center>
 <!-- heading/ words on page -->
 <center><h2>Select a city to see which shelters need volunteers near you!</h2>
 <p>Click on your region/city</p></center>
@@ -87,7 +181,7 @@ body {background-color:#F7E4FC}
 <div class="dropdown">
 <button onclick="myFunction()" class="dropbtn">San Francisco</button>
   <div id="myDropdown" class="dropdown-content">
-    <a href="#contact">SF Animal Care & Control</a>
+    <a href="http://www.sfanimalcare.org/volunteer/">SF Animal Care</a>
     <a href="#about">Wonder Dog Rescue</a>
     <a href="#about">SF SPCA</a>
     <a href="#about">Family Dog Rescue</a>
@@ -143,125 +237,7 @@ body {background-color:#F7E4FC}
   </div>
 </div>
 
-    </center>
 
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-
-function myFunction1() {
-    document.getElementById("myDropdown1").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-
-function myFunction2() {
-    document.getElementById("myDropdown2").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-
-function myFunction3() {
-    document.getElementById("myDropdown3").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-
-function myFunction4() {
-    document.getElementById("myDropdown4").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-
-function myFunction5() {
-    document.getElementById("myDropdown5").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-
-</body>
+</center>
+</head>
 </html>
