@@ -2,16 +2,15 @@
 <html>
 <head>
 </head> <center/>
-<style> /* anything put in the style is applied to everything on the page*/
+
+<style> 
 body {background-color: #A9C4DB;} /*backgroung color*/
 p    {color: white;}
 header {
-    color: #FBB0AE;
-    font-family: century gothic;
-    font-size: 175%;
-    border: 10px double white
-    
-    
+    color: #EABCBB;
+    font-family: "Bebas Neue", Arial;
+    font-size: 50px;
+    border: 10px double white  
 }
 .nav li:last-child a {
 	border- right: none;
@@ -40,10 +39,19 @@ article {
     padding: 1em;
     overflow: hidden;
 }
-</style>
-</head>
-<body>
-<style>
+.parallax {
+    /* The image used */
+    background-image: url("http://boulevardveterinaryclinic.com/img/pet_collage.jpg");
+
+    /* Set a specific height */
+    min-height: 250px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 h3	{
 	color: teal;
 	font-family: century gothic;
@@ -59,7 +67,7 @@ header, footer {
     margin-bottom: .15cm;
 }
 .title {
-background-color: #37556E; /*hoppy helpers sign*/
+	background-color: #37556E; /*hoppy helpers sign*/
 }
 nav {
     float: left;
@@ -75,49 +83,42 @@ nav ul {
 nav ul a {
     text-decoration: none;
 }    
-</style>
-</body>
-
-<h1>
-  <head>
-    <title>Furrytail</title>
-    <style type="text/css">
-      h1.rfExample {
-        font-family: "Bebas Neue", Arial; 
-        font-size: 40px; 
-        color: #EABCBB;
-      }
-    </style>
-  </head>
-  
-  <body>
-    <header class= "title">FURRYTAIL ANIMAL HELPERS</header>
-  
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-    <script type="text/javascript"  src='http://cdn.renderedfont.com/js/renderedfont-0.8.min.js#free'></script>
-</body>
-
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-.w3-button {width:135px;}
-</style>
-  <button onclick="window.location.href='https://chakrikaratra.github.io/Final-Project/fosterpage.html'"id="button"class="w3-button w3-xxlarge w3-round-large">Foster</button>
-  <button onclick="window.location.href='https://chakrikaratra.github.io/Final-Project/adoptpage.html'" id= "button" class="w3-button w3-xxlarge w3-round-large">Adopt</button>
-  <button onclick="window.location.href='https://chakrikaratra.github.io/Final-Project/helppage.html'" id="button" class="w3-button w3-xxlarge w3-round-large">Help</button>
-  
-  <style>
-    #button { 
+#button { 
     background-color:#456681; /*button colors*/
     color: white;
 }
-  </style>
-  
+.w3-button {width:135px;}
+.w3-quarter{
+text-align: left;
+}
 
+</style>
+
+
+  
+<header class= "title">FURRYTAIL ANIMAL HELPERS</header>
+  
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+<script type="text/javascript"  src='http://cdn.renderedfont.com/js/renderedfont-0.8.min.js#free'></script>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <button onclick="window.location.href='https://chakrikaratra.github.io/Final-Project/fosterpage.html'"id="button"class="w3-button w3-xxlarge w3-round-large">Foster</button>
+  <button onclick="window.location.href='https://chakrikaratra.github.io/Final-Project/adoptpage.html'" id= "button" class="w3-button w3-xxlarge w3-round-large">Adopt</button>
+  <button onclick="window.location.href='https://chakrikaratra.github.io/Final-Project/helppage.html'" id="button" class="w3-button w3-xxlarge w3-round-large">Help</button>
 
 <h2 style = "color: #3d73a9"> <i>Designed exclusively for the Bay Area </i></h2>
 
+<div class="parallax"></div>
 
-  <img src="AotWeek.jpg" alt="yoda" style="width:960px;height:540px"  onclick="window.location.href='https://chakrikaratra.github.io/Final-Project/adoptpage.html';">
+<div style="height:500px;background-color:gray;font-size:36px">
+Scroll Up and Down this page to see the parallax scrolling effect.
+This div is just here to enable scrolling.
+Tip: Try to remove the background-attachment property to remove the scrolling effect.
+</div>
+
+<img src="AotWeek.jpg" alt="yoda" style="width:960px;height:540px"  onclick="window.location.href='https://chakrikaratra.github.io/Final-Project/adoptpage.html';">
   	
  <div style="font-size:large">&#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061;
 </div>
@@ -150,17 +151,8 @@ nav ul a {
 
 <div class="w3-quarter">
   <h2>Lauren Kiachian</h2>
-  <p>Lauren is a 16 year old who enjoys singing, volunteering, and eating mint chip ice cream.</p>
+  <p>Lauren is a 16 year old who enjoys singing, volunteering, and eating mint chip ice cream. She has two dogs: Flutter and Bentley. She is having a great time at Girls Who Code this summer and hopes to continue coding in the future.  </p>
 </div>
-
-<style>
-.w3-quarter{
-text-align: left;
-}
-</style>
-
-
-</body>
 
 
 </body>
