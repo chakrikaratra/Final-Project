@@ -21,71 +21,59 @@ function w3_close() {
 
 
 <style>
+	
 body {
-	background-color: #A9C4DB;		/*background of whole page*/
+	background-color: #A9C4DB;	
 }
 h1	{
-	border: 10px double #5983a6;		/*border of header*/
+	border: 10px double #5983a6;		
 	color: white;
 	font-family: century gothic;
 }
-h2	{
-	color:white;				/*CSS of animal names*/
-	font-family: century gothic;
+
+.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 300px;
+}
+.container {
+  position: relative;
+  width: 300px;
+}
+.container:hover .overlay {
+  opacity: 1;
 }
 
-.scrolldown {
-columns:100px 3;
-	width: 90%;
-	overflow:hidden;
-}
-	
-.container {					/*size of entire image and overlay*/
-	position: relative;
-	width: 300px;
-	float:left;
-	padding-right:50px;
-	display: inline-block;
-}
-.image {					/*size of image*/
-	/*display: block;*/
-	width: 300px;
-	height: 300px;
-}
-.overlay {					/*position and size of overlay*/
-	position: absolute;			
-	bottom: 100%;				/*where the overlay starts (50% is from middle, 100% from top)*/
-	left: 0;
-	right: 0;
-	background-color: #37556E;
-	overflow: hidden;
-	width: 300px;
-	height:0;
-	transition: .5s ease;
-}
-.container:hover .overlay {			/*where the overlay drops down*/
-	bottom: 0;
-	height: 100%;
-}
-.text {						/*CSS of text in the overlay*/
-	white-space: wrap; 
-	color: white;
-	font-size: 20px;
-	position: absolute;
-	overflow: hidden;
-	top: 50%;
-	left: 50%;
-	z-index: 1;
-	display: inline-block !important;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-.animal {
-	width:300px;
-	height:350px;
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #37556E;
 }
-	
+
+.text {
+  color: white;
+  font-family: century gothic;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
 </style>
 </head>
 <body>
@@ -103,75 +91,59 @@ columns:100px 3;
 
 
 <h1><center>FOSTER</h1>
-<div class = "scrolldown">
-	
-<div class="animal">
-<h2>Olaf</h2>
+<div class="gallery">
 <div class="container">
-	<img src="olaf.jpg" alt="Olaf" class="image">
-	<div class="overlay">
-		<div class="text"><center> Welsh corgi mix Male Medium (20-50 lbs)
-		</div>
-	</div>
-
+  <img src="olaf.jpg" alt="Olaf" class="image" >
+  <div class="overlay">
+    <div class="text">OLAF: Welsh corgi mix Male Medium (20-50 lbs)</div>
+  </div>
 </div>
 </div>
 
-<div class="animal">	
-
-<h2>Ben</h2>
+<div class="gallery">
 <div class="container">
-	<img src="ben.jpg" alt="Ben" class="image">
-	<div class="overlay">
-		<div class="text"><center>Schnauze Male Small (6-20 lbs)
-		</div>
-	</div>
+  <img src="ben.jpg" alt="Ben" class="image" >
+  <div class="overlay">
+    <div class="text">BEN: Schnauze Male Small (6-20 lbs)</div>
+  </div>
 </div>
 </div>
 
-<div class="animal">
-<h2>CocoPuffy</h2>
+<div class="gallery">
 <div class="container">
-	<img src="cocopuffy.jpg" alt="CocoPuffy" class="image">
-	<div class="overlay">
-		<div class="text"><center>Terrier mix Male Small (6-20 lbs)
-		</div>
-	</div>
+  <img src="cocopuffy.jpg" alt="CocoPuffy" class="image" >
+  <div class="overlay">
+    <div class="text">COCOPUFFY: Terrier mix Male Small (6-20 lbs)</div>
+  </div>
 </div>
 </div>
-	
-<div class="animal">
-<h2>Howie</h2>
+
+<div class="gallery">
 <div class="container">
-	<img src="Howie.jpg" alt="Howie" class="image">
-	<div class="overlay">
-		<div class="text"><center>Labrador retriever/shepherd mix Male Medium (20-50 lbs)
-		</div>
-	</div>
+  <img src="Howie.jpg" alt="Howie" class="image" >
+  <div class="overlay">
+    <div class="text">HOWIE: Labrador retriever/shepherd mix Male Medium (20-50 lbs)</div>
+  </div>
 </div>
 </div>	
-	
-<div class="animal">
-<h2>Frankie</h2>
+
+<div class="gallery">
 <div class="container">
-	<img src="Frankie.jpg" alt="Frankie" class="image">
-	<div class="overlay">
-		<div class="text"><center>Pit Bull Terrier Female Medium (40 lbs)
-		</div>
-	</div>
+  <img src="Frankie.jpg" alt="Frankie" class="image" >
+  <div class="overlay">
+    <div class="text">FRANKIE: Pit Bull Terrier Female Medium (40 lbs)</div>
+  </div>
 </div>
-</div>
-	
-<div class="animal">
-<h2>Zeke</h2>
+</div>		
+
+<div class="gallery">
 <div class="container">
-	<img src="zeke.jpg" alt="Zeke" class="image">
-	<div class="overlay">
-		<div class="text"><center>Maltese Mix Male Small (6 lbs)
-		</div>
-	</div>
+  <img src="zeke.jpg" alt="Zeke" class="image" >
+  <div class="overlay">
+    <div class="text">ZEKE: Maltese Mix Male Small (6 lbs)</div>
+  </div>
 </div>
-</div>
-</div>
+</div>	
+
 </body>
 </html>
