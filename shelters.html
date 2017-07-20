@@ -2,16 +2,17 @@
 <html>
 <head>
 
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 h2 {
 	font-size: 40px;
 }
-body {background-color:#F7E4FC}
+body {background-color:#EEDFD4}
 /*drop button appearance*/
 .dropbtn {
-    background-color: #F2A1A9;
+    background-color: #8BB1D1; /* color for San Francisco button*/
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -44,6 +45,15 @@ body {background-color:#F7E4FC}
 .dropdown a:hover {background-color: #F2C2A1}
 /* what happens when you 'show'*/
 .show {display:block;}
+
+
+#titlefont{   
+    font-family: "Bebas Neue", arial;
+    font-size: 35px;
+    border: 10px double white;
+    color: #8F8F8F
+} /* does things to the header*
+
 </style>
 
 
@@ -171,8 +181,11 @@ window.onclick = function(event) {
 
 <center>
 <!-- heading/ words on page -->
-<center><h2>Select a city to see which shelters need volunteers near you!</h2>
-<p>Click on your region/city</p></center>
+<center><h1 id="titlefont">Select a city to see which shelters need volunteers near you!</h1>
+</center>
+
+
+
 
 <!-- what happens when you click the btn-->
 <div class="dropdown">
@@ -186,7 +199,7 @@ window.onclick = function(event) {
 </div>
 
 <div class="dropdown">
-<button onclick="myFunction1()" class="dropbtn" style = "background-color:#9097F2" >Oakland</button>
+<button onclick="myFunction1()" class="dropbtn" style = "background-color:#8B8ED1" >Oakland</button> <!-- color for Oakland button -->
   <div id="myDropdown1" class="dropdown-content">
     <a href="http://www.oaklandanimalservices.org/how-to-help/fostering-animals/" target="_blank">Oakland animal services</a>
     <a href="http://eastbayspca.org/get-involved/volunteer/become-a-volunteer/" target="_blank">East Bay SPCA</a>
@@ -195,14 +208,14 @@ window.onclick = function(event) {
 </div>
 
 <div class="dropdown">
-<button onclick="myFunction2()" class="dropbtn" style="background-color: #A9F290">San Mateo</button>
+<button onclick="myFunction2()" class="dropbtn" style="background-color: #AB8BD1">San Mateo</button> <!-- color for San Mateo button -->
   <div id="myDropdown2" class="dropdown-content">
     <a href="https://peninsulahumanesociety.org/volunteer/" target="_blank">Peninsula Humane Society</a>
   </div>
 </div>
 
 <div class="dropdown">
-<button onclick="myFunction3()" class="dropbtn" style="background-color: #FFD762">Santa Clara</button>
+<button onclick="myFunction3()" class="dropbtn" style="background-color: #CE8BD1">Santa Clara</button> <!-- color for Santa Clara button -->
   <div id="myDropdown3" class="dropdown-content">
     <a href="http://svaca.com/how-to-help/volunteers"target="_blank">SVACA</a>
     <a href="http://www.hssv.org/get-involved/volunteer/#volnav-" target="_blank">Silicon Valley Humane Society</a>
@@ -215,7 +228,7 @@ window.onclick = function(event) {
 </div>
 
 <div class="dropdown">
-<button onclick="myFunction4()" class="dropbtn" style="background-color: #84389B">Alameda</button>
+<button onclick="myFunction4()" class="dropbtn" style="background-color: #D18BB1">Alameda</button> <!-- color for Alameda button -->
   <div id="myDropdown4" class="dropdown-content">
     <a href="http://www.alamedaanimalshelter.org/support/volunteer.html" target="_blank">Alameda Animal Shelter</a>
     <a href="http://www.fremontpolice.org/index.aspx?NID=176" target="_blank">Fremont Animal Shelter</a>
@@ -227,13 +240,18 @@ window.onclick = function(event) {
 
 
 <div class="dropdown">
-<button onclick="myFunction5()" class="dropbtn" style="background-color: #75EA93">Napa</button>
+<button onclick="myFunction5()" class="dropbtn" style="background-color: #D18B8E">Napa</button> <!-- color for Napa button -->
   <div id="myDropdown5" class="dropdown-content">
-    <a href="http://www.countyofnapa.org/Pages/DepartmentContent.aspx?id=4294970573" target="_blank">Napa County Animal Shelter</a>
-    
-  </div>
+    <a href="http://www.countyofnapa.org/Pages/DepartmentContent.aspx?id=4294970573" target="_blank">Napa County Animal Shelter</a> </div>
 </div>
 
+
+<br>
+<br>
+<br>
+
+
+<img src= "https://ochumanesociety.vetmatrixbase.com/clients/3697/images/happy_tails.jpg">
 
 </center>
 </head>
