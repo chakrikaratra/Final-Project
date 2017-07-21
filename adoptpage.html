@@ -32,15 +32,13 @@ function w3_close() {
 
 <style>
 body {
-    background-color:#D2E1E9;
+    background-color:white;
     font-family: bebas neue, arial
 }
 img {
    float: left;
-   margin: 10px;
    max-width: 300px;
    height: 300px;
-   border: 5px solid #EEDFD4;
     
 }
 p1 {
@@ -49,63 +47,111 @@ p1 {
     text-align: left;
 }
 h2 {
-	color:white;
-    border: 10px double white;
-    background-color: #EEDFD4;
-    padding:1em;
-}
-.button {
-    background-color: white;
-    border: 4px solid #D8E5EC;
-    color: black;
-    padding: 13px 22px;
-    text-align: center;
-    display: inline-block;
-    font-size: 18px;
-    border-radius: 20%;
-}
-.button:hover {
-    background-color: #D8E5EC;
-    color: white;
+	color:black;
 }
 .animals{
 	background-color: white;
     padding-bottom:120px;
 }
+html {
+  box-sizing: border-box;
+}
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
 </style>
 
-<center><h2 style="font-size: 40px;"> Adopt Your Life-Long Friend Today! </h2></center>
+<center><h2 style="font-size: 40px; border: 10px double white;
+    background-color: #EEDFD4;"> Adopt Your Life-Long Friend Today! </h2></center>
 
-<div class="animals">
-<p>
-<img src="Mochachino.jpg" alt="Mochachino" class="image" >
-<center><h1> Mochachino </h1>
-<p1 style = "padding-bottom: 500px" >Mocha is affectionate and loving, always coming to greet you and occasionally being a lap cat for a cuddle. But he's not 'needy' - as a daytime-outdoor cat coming from a multiple pet / person home, he is independent and very comfortable joining your crew. He has lived with small dogs but would like to get to know them carefully first. He enjoys having the run of your yard and is very inquisitive and playful.  </p1> 
-<button class="button">Adopt >></button></center>
-</p> 
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://drpem3xzef3kf.cloudfront.net/photos/pets/37522263/1/?bust=1488269202&width=632&no_scale_up=1" alt="Mochachino" style="width:100%">
+      <div class="container">
+       <h2>Mochachino</h2>
+        <p class="title">Cat • Maine Coon • Adult • Male • Large</p>
+        <p>Mocha is affectionate and loving, always coming to greet you and occasionally being a lap cat for a cuddle. But he's not 'needy' - as a daytime-outdoor cat coming from a multiple pet / person home, he is independent and very comfortable joining your crew...</p>
+        <p><button class="button">Adopt</button></p>
+      </div>
+    </div>
+  </div>
 
-<center><div style="font-size:large; padding-bottom: 40px; padding-top: 50px;">&#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061;
-</div></center>
 
-<p>
-<img src="Finnegan.jpg" alt="Finnegan" class="image" >
-<center><h1>Finnegan </h1>
-<p1>My name is Finnegan, and I’m such a clever boy! I tricked BARK volunteers into thinking that I could be a Keeshond! Ha ha ha ha! I was disguised in my shelter photo, so they drove all the way out into the Central Valley to meet me. When they arrived at the shelter, they could see right away that I’m not a purebred Keeshond. </p1>
-<button class="button">Adopt >></button></center>
-</p> 
-
-<center><div style="font-size:large; padding-bottom: 40px; padding-top: 90px;">&#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061;
-</div></center>
-
-<p>
-<img src="Robbie.jpg" alt="Robbie" class="image" >
-<center><h1> Bon Bon </h1>
-<p1>Hello, I am Robbie. I'm a mellow guy who warms up slowly and has a hidden affectionate side that takes time to come out. I'm very curious about new things and always enjoy exploring during play time. I hope to get to know you and find out if we're a match!  </p1>
-<button class="button">Adopt >></button></center>
-</p> 
-
-<center><div style="font-size:large; padding-bottom: 40px; padding-top: 90px;">&#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061; &#10061;
+  <div class="column">
+    <div class="card">
+      <img src="https://drpem3xzef3kf.cloudfront.net/photos/pets/37742042/1/?bust=1490893565&width=632&no_scale_up=1" alt="Finnegan" style="width:100%">
+      <div class="container">
+        <h2>Finnegan</h2>
+        <p class="title">Dog • Keeshond • Young • Male • Medium</p>
+        <p>My name is Finnegan, and I’m such a clever boy! I tricked BARK volunteers into thinking that I could be a Keeshond! Ha ha ha ha! I was disguised in my shelter photo, so they drove all the way out into the Central Valley to meet me. When they arrived at the shelter, they could see right away that I’m not a purebred Keeshond...</p>
+        <p><button class="button">Adopt</button></p>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://drpem3xzef3kf.cloudfront.net/photos/pets/36966357/1/?bust=1481658890&width=632&no_scale_up=1" alt="Robbie" style="width:100%">
+      <div class="container">
+        <h2>Robbie</h2>
+        <p class="title">Rabbit • American • Adult • Male • Medium</p>
+        <p>Hello, I am Robbie. I'm a mellow guy who warms up slowly and has a hidden affectionate side that takes time to come out. I'm very curious about new things and always enjoy exploring during play time...</p>
+        <p><button class="button">Adopt</button></p>
+      </div>
+    </div>
+  </div>
+  
 </div></center>
 </div>
 </body>
