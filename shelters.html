@@ -59,21 +59,34 @@ body {background-color:#C2D7FE}
     font-size: 35px;
     border: 10px double white;
     color: #8F8F8F
-} /* does things to the header*
+}
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #34645f;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #818181;
+}
 </style>
 
 
 <script>
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-}
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-}
 
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+/*toggle between hiding and showing the dropdown content */
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -175,16 +188,12 @@ window.onclick = function(event) {
 </head>
 <body>
 
-<div class="w3-sidebar w3-bar-block" style="display:none" id="mySidebar">
-  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-  <a href="https://chakrikaratra.github.io/Final-Project/FinalProject.html" class="w3-bar-item w3-button">Home</a>
-  <a href="https://chakrikaratra.github.io/Final-Project/fosterpage.html" class="w3-bar-item w3-button">Foster</a>
-    <a href="https://chakrikaratra.github.io/Final-Project/adoptpage.html" class="w3-bar-item w3-button">Adopt</a>
-  <a href="https://chakrikaratra.github.io/Final-Project/helppage.html" class="w3-bar-item w3-button">Help</a>
-</div>
-  <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">☰</button>
-  <div class="w3-container">
-
+<ul>
+  <li><a class="active" href="https://chakrikaratra.github.io/Final-Project/FinalProject.html">Home</a></li>
+  <li><a href="https://chakrikaratra.github.io/Final-Project/fosterpage.html">Foster</a></li>
+  <li><a href="https://chakrikaratra.github.io/Final-Project/adoptpage.html">Volunteer</a></li>
+  <li><a href="https://chakrikaratra.github.io/Final-Project/helppage.html">Get Involved</a></li>
+</ul>
 
 <center>
 <!-- heading/ words on page -->
