@@ -21,6 +21,25 @@ function w3_close() {
 
 
 <style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #34645f;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #818181;
 	
 body {
 	background-color: #92a8d1;	
@@ -80,7 +99,13 @@ h1	{
 </head>
 <body>
 
-
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="https://chakrikaratra.github.io/Final-Project/FinalProject.html" class="w3-bar-item w3-button">Home</a>
+  <a href="https://chakrikaratra.github.io/Final-Project/fosterpage.html" class="w3-bar-item w3-button">Foster</a>
+  <a href="https://chakrikaratra.github.io/Final-Project/adoptpage.html" class="w3-bar-item w3-button">Adopt</a>
+</div>
+	
 <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
   <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
   <a href="https://chakrikaratra.github.io/Final-Project/FinalProject.html" class="w3-bar-item w3-button">Home</a>
