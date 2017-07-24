@@ -15,6 +15,13 @@ function w3_close() {
     
 <style>
 
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body {
     background-color: white;
 }
@@ -39,19 +46,25 @@ div.desc {
     text-align: center;
 }
 .button {
-  border: none;
+  background-color: black;
   outline: 0;
   display: inline-block;
-  padding: 8px;
   color: white;
-  background-color: #000;
   text-align: center;
   cursor: pointer;
   width: 100%;
+  font-size: 16px;
 }
+.button:hover {
+  background-color: #555;
+}
+
 </style>
 </head>
+
+
 <body>
+
 <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
   <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
   <a href="https://chakrikaratra.github.io/Final-Project/FinalProject.html" class="w3-bar-item w3-button">Home</a>
@@ -60,8 +73,7 @@ div.desc {
 </div>
   <button class="w3-button w3-white w3-xxlarge" onclick="w3_open()">☰</button>
   <div class="w3-container"> 
-      
-<center><h2 style="font-size: 40px; border: 10px double #034f84; background-color: #92a8d1; color:white; font-family:century gothic;">Adopt Your Life-Long Friend Today! </h2></center>
+  
   
 <div class="gallery">
   <a target="" href="Mochachino.jpg">
@@ -73,8 +85,7 @@ div.desc {
 </div>
 <div class="desc" style="background-color:#034f84;font-family:century gothic;color:white;font-size:15px;" >Mocha is affectionate and loving, always coming to greet you and occasionally being a lap cat for a cuddle. But he's not 'needy' - as a daytime-outdoor cat coming from a multiple pet / person home, he is independent and very comfortable joining your crew...
 </div>
-<div class="desc" style="background-color:#034f84;font-family:century gothic;color:#f7786b;font-size:20px;" >Click on my photo to ADOPT ME!
-</div>
+
 </div>
 
 <div class="gallery">
@@ -87,8 +98,7 @@ div.desc {
 </div>
 <div class="desc" style="background-color:#034f84;font-family:century gothic;color:white;font-size:15px;" >Hello, I am Robbie. I'm a mellow guy who warms up slowly and has a hidden affectionate side that takes time to come out. I'm very curious about new things and always enjoy exploring during play time...
 </div>
-<div class="desc" style="background-color:#034f84;font-family:century gothic;color:#f7786b;font-size:20px;" >Click on my photo to ADOPT ME!
-</div>
+
 </div>
 
 <div class="gallery">
@@ -101,9 +111,10 @@ div.desc {
 </div>
 <div class="desc" style="background-color:#034f84;font-family:century gothic;color:white;font-size:15px;" >My name is Finnegan, and I’m such a clever boy! I tricked BARK volunteers into thinking that I could be a Keeshond! Ha ha ha ha! I was disguised in my shelter photo, so they drove all the way out into the Central Valley to meet me. When they arrived at the shelter, they could see right away that I’m not a purebred Keeshond...
 </div>
- <p><button class="button">Contact</button></p>
+<p><button class="button">Contact</button></p>
 </div>
 
 
 </body>
 </html>
+
